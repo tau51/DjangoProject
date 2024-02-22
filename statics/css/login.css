@@ -1,0 +1,49 @@
+div#login-box {
+    border-radius: 20px;
+    width: 400px;
+    /* height: 400px; */
+
+    background: #fff;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#bar {
+    width: fit-content;
+    background: #ccc;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 2px;
+}
+
+a.login-entry-btn {
+    padding: 1px 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+a.login-entry-btn.active {
+    background: #fff;
+}
+
+a.login-entry-btn::after {
+    content: '';
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    width: 30px;
+    height: 16px;
+}
+
+a.login-entry-btn::before {
+    margin: 0 0 0 10px;
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{FileSaver, bootstrap, bootstrap-editable, bootstrap-table, bootstrap-table-editable, jquery, jquery-3.5.1, jquery.cookie, tableexport.jquery.plugin, twitter-bootstrap, x-editable, xlsx.core}" />
+  </component>
+</project>

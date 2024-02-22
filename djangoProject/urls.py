@@ -1,0 +1,42 @@
+"""
+URL configuration for djangoProject project.
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/4.2/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.contrib import admin
+from django.urls import path
+from pj1 import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('login/', views.login),
+    path('index/', views.index),
+    path('sign/', views.sign),
+    path('signup/', views.signup),
+    path('clue/', views.clue),
+    path('clue/mine/',views.clue_mine),
+    path('clue/edit/', views.edit_clue),
+    path('clue/add/',views.add_clue),
+    path('clue/delete/',views.delete_clue),
+    path('clue/admin/', views.admin),
+    path('user/admin/',views.user_admin_check),
+    path('user/admin/view/', views.user_admin),
+    path('user/admin/delete/', views.delete_account),
+    path('user/admin/edit/', views.edit_account),
+    path('clue/admin/data/', views.clue_admin),
+    path('clue/admin/edit/', views.edit_clue_admin),
+    path('clue/admin/delete/', views.delete_clue_admin),
+    path('clue/admin/load/',views.clue_load),
+    path('clue/admin/manage/',views.manage)
+]
